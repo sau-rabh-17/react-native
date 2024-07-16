@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            margin: 0;
+            padding : 0;
+        }
+        .container{
+            width: 400px;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 8px;
+            background-color: rgb(255, 127, 255);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        form > label{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .form-link {
+            margin-top: 20px;
+        }
+
+        .form-link a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        .form-link a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Signup Page</h1>
+        <p>Please signup using the form below:</p>
+        <br><br><br>
+        <form>
+            <label for="fname">First Name:</label>
+            <input id="fname" type="text" name="fname" required>
+
+            <label for="lname">Last Name:</label>
+            <input id="lname" type="text" name="lname" required>
+
+            <label for="bdate">Date of Birth:</label>
+            <input type="date" id="bdate" name="bdate" required>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        <div class="form-link">
+            Already have an account? <a href="./login.html"><b>Login</b></a>
+        </div>
+</body>
+
+</html>

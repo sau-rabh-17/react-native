@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            margin: 0;
+            padding : 0;
+        }
+        .container{
+            
+            text-align: center;
+            padding: 50px;
+            border: 1px solid;
+            border-radius: 8px;
+            background-color: aquamarine;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="date"] {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .form-link {
+            margin-top: 20px;
+        }
+
+        .form-link a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        .form-link a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login Page</h1>
+        <p>Please  using the form below:</p>
+        <br><br><br>
+        <form>
+            <label for="username" class="username">Username</label>
+            <input id="username" type="text" name="username" required>
+
+            <label for="password" class="username">Password</label>
+            <input id="password" type="password" name="password" required>
+
+            <button type="submit" class="submit">Login</button>
+        </form>
+        <div class="form-link">
+            Don't have an account? <a href="./signup.html"><b>Sign Up</b></a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -6,5 +6,6 @@ Login Pagr<br>
 Signup Page<BR>
 ![WhatsApp Image 2024-07-18 at 16 31 01_00f5b6f4](https://github.com/user-attachments/assets/68160b36-1bab-4cea-80ec-de09c0557783)<br>
 Reusable Buttons<BR>
-![WhatsApp Image 2024-07-18 at 16 30 34_837d0bab](https://github.com/user-attachments/assets/0a4deb2d-0109-4371-b796-8f7ae7d61e56)<br>
+![WhatsApp Image 2024-07-18 at 16 50 16_9fda94af](https://github.com/user-attachments/assets/fc4fa590-8b43-4bbf-8a03-bb8142c4a093)
+
 

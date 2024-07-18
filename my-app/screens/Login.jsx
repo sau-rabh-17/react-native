@@ -78,10 +78,10 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   buttonContainer: {
-    marginTop: 16, // Add margin to the top of the button container
+    marginTop: 16, 
   },
   buttonWrapper: {
-    marginBottom: 10, // Adjust the gap between the buttons
+    marginBottom: 10,
   },
 });
 

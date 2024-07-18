@@ -1,20 +1,35 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+import { useState } from "react";
+import Login from "./screens/Login";
+import Signup from "./screens/Signup";
+import Home from "./screens/Home";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+const App = () => {
+  const [currentView, setCurrentView] = useState("home");
+
+  const renderComponent = () => {
+    switch (currentView) {
+      case "login":
+        return <Login onSignupPress={() => setCurrentView("signup")} />;
+      case "signup":
+        return <Signup onLoginPress={() => setCurrentView("login")} />;
+      default:
+        return <Home onLoginPress={() => setCurrentView("login")} />;
+    }
+  };
+
+  return <View style={styles.container}>{renderComponent()}</View>;
+};
+
+export default App;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
 });
+

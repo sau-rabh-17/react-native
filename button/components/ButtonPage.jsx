@@ -9,7 +9,7 @@ const ButtonPage = () => {
 
   return (
     <ImageBackground style={styles.background}>
-      <Text style={styles.text}>Hello, welcome to the page of buttons</Text>
+      <Text style={styles.text}>Say Hi to Reusable Buttons!!!</Text>
       <View style={styles.container}>
         <ReusableButton 
           iconName="check" 

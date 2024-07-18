@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, ImageBackground } from 'react-native';
-import ReusableButton from './ReusableButton'; // Adjust the import path as necessary
+import ReusableButton from './ReusableButton'; 
 
 const ButtonPage = () => {
   const handlePress = () => {
